@@ -1,0 +1,61 @@
+- Shop employees :
+CREATE TABLE employees (
+ID INT PRIMARY KEY ,
+email VARCHAR (30),
+name VARCHAR (30),
+salary INT ,
+departmentID INT
+);
+describe employees;
+
+- Shop customer :
+CREATE TABLE customer (
+ID INT PRIMARY KEY ,
+full_name VARCHAR (60),
+address VARCHAR (60),
+Phone VARCHAR (60),
+age VARCHAR (3),
+gender VARCHAR (6),
+password VARCHAR (20)
+);
+describe customer;
+
+ - Shop orders :
+CREATE TABLE orders (
+ID INT PRIMARY KEY ,
+customerID INT ,
+productID INT ,
+date DATE ,
+amount INT 
+);
+describe orders;
+
+
+- Shop admins :
+CREATE TABLE admins (
+ID INT PRIMARY KEY ,
+email VARCHAR (30),
+password VARCHAR (30),
+employeeID INT 
+);
+
+describe adminds;
+
+- Shop department :
+CREATE TABLE department (
+ID INT PRIMARY KEY ,
+name VARCHAR (30) 
+);
+
+describe department;
+
+- Shop products :
+CREATE TABLE products (
+ID INT PRIMARY KEY ,
+name VARCHAR (50) ,
+category VARCHAR (30),
+price INT
+); 
+
+describe products;
+
